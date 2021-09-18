@@ -2,9 +2,9 @@
 
 namespace Mdhesari\VoyagerDataTypes;
 
+use Mdhesari\VoyagerDataTypes\Commands\VoyagerDataTypesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Mdhesari\VoyagerDataTypes\Commands\VoyagerDataTypesCommand;
 
 class VoyagerDataTypesServiceProvider extends PackageServiceProvider
 {

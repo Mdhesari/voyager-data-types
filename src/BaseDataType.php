@@ -18,7 +18,7 @@ abstract class BaseDataType
     {
         return DataRow::firstOrNew([
             'data_type_id' => $type->id,
-            'field'        => $field,
+            'field' => $field,
         ]);
     }
 }

@@ -3,8 +3,8 @@
 namespace Mdhesari\VoyagerDataTypes\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Mdhesari\VoyagerDataTypes\VoyagerDataTypesServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
