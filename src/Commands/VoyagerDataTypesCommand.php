@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Mdhesari\VoyagerDataTypes\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class VoyagerDataTypesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'voyager-data-types';
 
     public $description = 'My command';
 

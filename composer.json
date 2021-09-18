@@ -1,24 +1,25 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mdhesari/voyager-data-types",
+    "description": "Build data types and include data rows within command-line.",
     "keywords": [
-        ":vendor_name",
+        "Mdhesari",
         "laravel",
-        ":package_slug"
+        "voyager-data-types"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mdhesari/voyager-data-types",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mohamad Hesari",
+            "email": "mdhesari99@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
+        "illuminate/contracts": "^8.37",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "tcg/voyager": "^1.5"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
@@ -30,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Mdhesari\\VoyagerDataTypes\\": "src",
+            "Mdhesari\\VoyagerDataTypes\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Mdhesari\\VoyagerDataTypes\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Mdhesari\\VoyagerDataTypes\\VoyagerDataTypesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "VoyagerDataTypes": "Mdhesari\\VoyagerDataTypes\\VoyagerDataTypesFacade"
             }
         }
     },

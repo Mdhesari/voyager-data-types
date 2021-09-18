@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Space\DataRows;
+
+class {{Model}}DataRows extends BaseDataRows
+{
+    public function create($groupDataQuery, \Closure $next)
+    {
+        $groupDataType = $groupDataQuery->where('slug', \Str::of($model)->plural()->lower())->firstOrFail();
+
+        // Your code
+
+        return $next($groupDataType);
+    }
+}
